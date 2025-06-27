@@ -1,0 +1,8 @@
+#version: '3.8'
+services:
+  sender:
+    build: .
+    volumes:
+      - ./data/in:/in:ro
+    env_file:
+      - .env
